@@ -1,0 +1,347 @@
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,400;1,500&display=swap"); 
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+  width: 100%;
+  background-color: white;
+  
+}
+
+/* HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.header-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  position: relative;
+  height: 100px;
+  
+}
+
+.header-container img{
+  margin-left: 100px;
+ height: 100px;
+}
+
+.header-container p {
+  display: grid;
+  align-self: center;
+  margin-right: 100px;
+}
+
+.header-container a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  
+}
+
+
+/* HERO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.hero-container{
+  width: 100%;
+  position: relative;
+}
+
+.hero-container img{
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-radius: 15px;
+ filter: brightness(50%);
+}
+
+.hero-container h1{
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-container p{
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: white;
+}
+
+.hero-container a{
+  position: absolute;
+  top: 70%;
+  left: 16.5%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: white;
+  border: 1px white solid;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 5px;
+   transition: font-size 0.5s; 
+}
+
+ .hero-container a:hover{
+  font-size: 22px;
+  color: gray;
+
+} 
+
+#servicios{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+/* BENEFICIOS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.benefits-container{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 100px;
+  padding-right: 100px;
+ 
+}
+.benefits-container .web-container{
+  width: 100%;
+
+  position: relative; 
+  padding-right: 5px;
+}
+.benefits-container .web-container img{
+  width: 100%;
+  height: 350px;
+  position: relative;
+  filter: brightness(50%);
+  border-radius: 5px
+}
+.benefits-container .web-container h3{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 22px;
+}
+
+.benefits-container .web-container p{
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  color: white;
+  
+}
+
+.benefits-container .web-container a{
+  position: absolute;
+  top: 220px;
+  left: 10px;
+  color: white;
+  text-decoration: none;
+  
+  padding: 5px;
+  border-radius: 30px;
+  font-size: 15px;
+
+}
+
+
+
+
+/*APP CONTAINER*/
+.benefits-container .App-container{
+  width: 100%;
+
+  position: relative; 
+  padding-left: 5px;
+}
+.benefits-container .App-container img{
+  width: 100%;
+  height: 350px;
+  position: relative;
+  filter: brightness(50%);
+  border-radius: 5px
+}
+
+.benefits-container .App-container h3{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 22px;
+}
+
+
+.benefits-container .App-container p{
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  color: white;
+  
+}
+
+.benefits-container .App-container a{
+  position: absolute;
+  top: 220px;
+  left: 10px;
+  color: white;
+  text-decoration: none;
+ 
+  padding: 5px;
+  border-radius: 30px;
+  font-size: 15px;
+
+}
+
+
+
+/* SOLICITAR !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.h3-products{
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+.steps-container{
+  margin-top: 100px;
+  width: 100%;
+}
+
+.steps-container img{
+  height: 150px;
+  width: 150px;
+  
+}
+
+form{
+  display: grid;
+}
+
+form .step-1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+form .step-1 p{
+  color: #219ebc;
+  align-self: center;
+}
+form .step-2 p{
+  color: #ffb703;
+  align-self: center;
+}form .step-3 p{
+  color: #264653;
+  align-self: center;
+}form .step-4 p{
+  color: #8338ec;
+  align-self: center;
+}
+form .step-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 70%;
+}
+
+form .step-3{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 70%;
+}
+
+form .step-4{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 70%;
+}
+
+
+
+
+
+/* FORMULARIO */
+form{
+  padding-right: 100px;
+  padding-left: 100px;
+
+  margin-top: 50px;
+}
+
+
+
+
+
+
+/* ANIMACIONES CON LIBRERIAS */
+
+/* NAVBAR BUTTONS */
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098D1;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* BOTONES DE PRODUCTOS */
+.hvr-border-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  box-shadow: inset 0 0 0 4px #e1e1e1, 0 0 1px rgba(0, 0, 0, 0);
+  /* Hack to improve aliasing on mobile/tablet devices */
+}
+.hvr-border-fade:hover, .hvr-border-fade:focus, .hvr-border-fade:active {
+  box-shadow: inset 0 0 0 4px #2098D1, 0 0 1px rgba(0, 0, 0, 0);}
