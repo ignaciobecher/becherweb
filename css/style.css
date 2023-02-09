@@ -152,10 +152,6 @@ body{
 
 }
 
-
-
-
-/*APP CONTAINER*/
 .benefits-container .App-container{
   width: 100%;
 
@@ -272,16 +268,56 @@ form .step-4{
 
 
 
-
 /* FORMULARIO */
-form{
-  padding-right: 100px;
-  padding-left: 100px;
-
+.h3-contact{
+  text-align: center;
   margin-top: 50px;
+  margin-bottom: 50px;
+ }
+
+.form-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+ 
+}
+
+.form-container label{
+  display: grid;
+  justify-content: left;
 }
 
 
+
+.form-container .button-input .btn-submit{
+  width: 315px;
+  border-color: #2098D1;
+  border-radius: 5px;
+  background-color: white;
+  color: black
+}
+
+.form-container textarea{
+  width:315px ;
+  margin-bottom: 30px;
+}
+
+
+
+/* FOOTER */
+
+.footer-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: black;
+  color: white;
+  margin-top: 50px;
+ 
+}
+
+.footer-container a {
+  color: white;
+}
 
 
 

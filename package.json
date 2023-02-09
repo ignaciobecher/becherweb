@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "animate.css": "^4.1.1",
     "hover.css": "^2.3.2"
   }

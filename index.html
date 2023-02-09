@@ -17,6 +17,10 @@
       rel="stylesheet"
       href="http://anijs.github.io/lib/anicollection/anicollection.css"
     />
+    <script
+      src="https://kit.fontawesome.com/6ac7388e8a.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container">
@@ -100,13 +104,54 @@
         </form>
       </section>
 
+      <!-- FORMULARIO -->
+      <h3 class="h3-contact">Formulario de contacto</h3>
+
+      <form class="form-container">
+        <div class="name-input">
+          <label for="">Nombre:</label>
+          <input type="text" name="" id="fullName" required />
+        </div>
+        <div class="email-input">
+          <label for="">Email:</label>
+          <input type="text" name="" id="email_id" required />
+        </div>
+        <div class="consult-input">
+          <label for="">Consulta:</label>
+          <textarea id="message" cols="1" rows="1"></textarea>
+        </div>
+        <div class="button-input">
+          <button
+            onclick="sendMail()"
+            type="submit"
+            id="btn-submit-id"
+            class="btn-submit"
+          >
+            Enviar
+          </button>
+        </div>
+      </form>
+
       <!-- FOOTER -->
-      <section class="footer">
-        <label for="">Villa Mercedes</label>
-        <label for="">2657-201291</label>
-        <label for="">becherdesarrollo@gmail.com</label>
+      <section class="footer-container">
+        <a href="" class="hvr-sweep-to-right"
+          ><i class="fa-regular fa-envelope"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/becherdesarrollo/"
+          class="hvr-sweep-to-right"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.google.com/maps/place/Avenida+Bartolom%C3%A9+Mitre+%26+Corrientes,+Villa+Mercedes,+San+Luis/data=!4m2!3m1!1s0x95d16a639dca704d:0xaa44626c7fe04e7b?sa=X&ved=2ahUKEwiLtvCNt4n9AhX0rpUCHVerDlcQ8gF6BAgJEAI"
+          class="hvr-sweep-to-right"
+          ><i class="fa-solid fa-location-pin"></i
+        ></a>
+
+        <p>Villa Mercedes</p>
       </section>
     </div>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./anijs-master/dist/anijs-min.js"></script>
     <script>
@@ -114,5 +159,15 @@
         duration: 2000,
       });
     </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("65U3gUdFV_lp5kx5e");
+      })();
+    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
