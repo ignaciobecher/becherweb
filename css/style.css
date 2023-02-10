@@ -108,13 +108,13 @@ body{
   grid-template-columns: 1fr 1fr;
   padding-left: 100px;
   padding-right: 100px;
- 
+ column-gap: 10px;
 }
 .benefits-container .web-container{
   width: 100%;
 
   position: relative; 
-  padding-right: 5px;
+
 }
 .benefits-container .web-container img{
   width: 100%;
@@ -156,7 +156,7 @@ body{
   width: 100%;
 
   position: relative; 
-  padding-left: 5px;
+  
 }
 .benefits-container .App-container img{
   width: 100%;
@@ -321,11 +321,8 @@ form .step-4{
 
 /*??????????????????DISPOSITIVOS MOVILES HASTA 480PX????????????????????*/
 
-@media only screen and (max-width: 480px){
-.container{
-  padding: 0;
-  width: 100%;
-}
+@media only screen and (max-width: 600px){
+
 
 
   /* HEADER */
@@ -355,47 +352,67 @@ form .step-4{
 .hero-container img{
   padding: 0;
   position: relative;
+  height: 330px;
 }
 
 .hero-container h1{
 color: white;
-font-size: 20px;
+font-size: 22px;
 width: 80%;
-position: absolute;
-left: 214px;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 padding-bottom: 10px;
 }
 
 .hero-container p{
   color: white;
-  font-size: 11px;
+  font-size: 13px;
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hero-container a{
-  color: white;
-  font-size: 10px;
   position: absolute;
-  left: 80px;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+  
 }
 
 
   /* PRODUCTOS */
 .benefits-container{
-  display: none;
+ display: flex;
+  flex-direction: column;
+  padding:0;
+  
 }
 
-/* PASOS */
-.steps-container{
-  display: none;
+.web-container{
+  margin-bottom: 20px;
+  position: relative;
 }
+
+
+
+
+
+
+/* PASOS */
+
 
   /* FORMULARIO */
 .form-container{
-  display: none;
+  
 }
   /* FOOTER */
 .footer-container{
-  display: none;
+
 }
 }
 
