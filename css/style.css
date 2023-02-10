@@ -319,10 +319,120 @@ form .step-4{
   color: white;
 }
 
+/*??????????????????DISPOSITIVOS MOVILES HASTA 480PX????????????????????*/
+
+@media only screen and (max-width: 480px){
+
+  body{
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 320px;
+  }
+
+  .container{
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .header-container{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+
+    
+  }
+
+  .header-container img{
+    margin: 0 auto;
+display: grid;
+grid-column: 2;
+  }
+
+  .header-container p{
+    display: none;
+  }
+
+  .hero-container {
+ display: none;
+  }
+
+  /* PRODUCTOS */
+  .benefits-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+     padding-left: 20px;
+    padding-right: 20px;  
+    
+  }
+
+  .benefits-container .web-container{
+    display: grid;
+    grid-row: 1;
+    width:280px;
+    padding-right: 0;
+    position: relative;
+    margin-bottom: 50px;
+    }
+
+    .benefits-container .web-container img{
+      position: relative;
+    }
+
+    .benefits-container .web-container h3{
+      font-size: 30px;
+      text-align: center;
+      position: absolute;
+      left: 10px;
+    }
+
+    .benefits-container .web-container p{
+      font-size: 15px;
+
+    }
+    .benefits-container .web-container a{
+      position: absolute;
+      top: 250px;
+
+    }
+
+/* APPCONTAINER */
+  .benefits-container .App-container{
+    display: grid;
+    grid-row: 2;
+    width:280px;
+    padding-left: 0;
+    position: relative;
+  }
+
+  .benefits-container .App-container img{
+    position: relative;
+  }
+
+  .benefits-container .App-container h3{
+    font-size: 30px;
+    position: absolute;
+    left: 10px;
+  }
+
+  .benefits-container .App-container p{
+    position: absolute;
+    font-size: 15px;
+    top: 100px;
+  }
+
+  .benefits-container .App-container a{
+    position: absolute;
+    top: 260px;
+  }
+  
 
 
+  
+}
 
-/* ANIMACIONES CON LIBRERIAS */
+
+/* ANIMACIONES CON LIBRERIAS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 /* NAVBAR BUTTONS */
 .hvr-sweep-to-right {
