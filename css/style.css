@@ -322,130 +322,82 @@ form .step-4{
 /*??????????????????DISPOSITIVOS MOVILES HASTA 480PX????????????????????*/
 
 @media only screen and (max-width: 480px){
+.container{
+  padding: 0;
+  width: 100%;
+}
 
-  body{
-    /* padding-left: 0;
-    padding-right: 0;
-    margin-right: 0;
-    margin-left: 0; */
-    max-width: 480px;
-  }
 
-  .container{
-    padding-right: 0;
-    padding-left: 0;
-  }
-
+  /* HEADER */
   .header-container{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     
   }
 
   .header-container img{
+    display: grid;
+    grid-column: 2;
     margin: 0 auto;
-display: grid;
-grid-column: 2;
+ 
   }
 
   .header-container p{
     display: none;
   }
+  /* HERO */
+.hero-container{
 
-  .hero-container {
- display: none;
-  }
+ width: 100%;
+ 
+}
+
+.hero-container img{
+  padding: 0;
+  position: relative;
+}
+
+.hero-container h1{
+color: white;
+font-size: 20px;
+width: 80%;
+position: absolute;
+left: 214px;
+padding-bottom: 10px;
+}
+
+.hero-container p{
+  color: white;
+  font-size: 11px;
+}
+
+.hero-container a{
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  left: 80px;
+}
+
 
   /* PRODUCTOS */
-  .benefits-container{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-     padding-left: 20px;
-    padding-right: 20px;  
-    
-  }
+.benefits-container{
+  display: none;
+}
 
-  .benefits-container .web-container{
-    display: grid;
-    grid-row: 1;
-    width:280px;
-    padding-right: 0;
-    position: relative;
-    margin-bottom: 50px;
-    }
+/* PASOS */
+.steps-container{
+  display: none;
+}
 
-    .benefits-container .web-container img{
-      position: relative;
-    }
-
-    .benefits-container .web-container h3{
-      font-size: 30px;
-      text-align: center;
-      position: absolute;
-      left: 10px;
-    }
-
-    .benefits-container .web-container p{
-      font-size: 15px;
-
-    }
-    .benefits-container .web-container a{
-      position: absolute;
-      top: 250px;
-
-    }
-
-/* APPCONTAINER */
-  .benefits-container .App-container{
-    display: grid;
-    grid-row: 2;
-    width:280px;
-    padding-left: 0;
-    position: relative;
-  }
-
-  .benefits-container .App-container img{
-    position: relative;
-  }
-
-  .benefits-container .App-container h3{
-    font-size: 30px;
-    position: absolute;
-    left: 10px;
-  }
-
-  .benefits-container .App-container p{
-    position: absolute;
-    font-size: 15px;
-    top: 100px;
-  }
-
-  .benefits-container .App-container a{
-    position: absolute;
-    top: 260px;
-  }
-  
-  /* PASOS A SEGUIR!!!!!!!!!!!!!!! */
-  .steps-container{
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  /* FORMULARIO!!!!!!!!!!!!!!!! */
-
+  /* FORMULARIO */
 .form-container{
-
+  display: none;
 }
-
-
-  .footer-container{
-    padding-left: 0;
-    padding-right: 0;
-  }
-  
+  /* FOOTER */
+.footer-container{
+  display: none;
 }
-
+}
 
 /* ANIMACIONES CON LIBRERIAS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
