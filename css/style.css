@@ -334,37 +334,25 @@ body{
   .header-container{display: none;}
 
 .header-container-responsive{
-   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
+ display: flex;
 
 }
 
 .header-container-responsive img{
   height: 100px;
-  display: grid;
-  grid-column:2 ;
+
   margin: 0 auto;
 }
 .header-container-responsive a{
-
 display: none;
+color: black;
+padding-bottom: 20px;
 }
 
-.header-container-visible{
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr;
-  justify-content: right;
-}
-
-.a-visible{
-  display: grid;
-  grid-column: 2;
-}
 
 #btn-menu{
   align-self: center;
-  display: block;
+
 }
 
 #btn-close{
