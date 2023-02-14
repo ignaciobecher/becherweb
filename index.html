@@ -34,6 +34,17 @@
         <p><a href="" class="hvr-sweep-to-right">Contacto</a></p>
       </div>
 
+      <!-- HEADER RESPONSIVE -->
+      <div class="header-container-responsive">
+        <img src="./img/Becher desarrollo web(2).png" alt="" />
+        <a href="" id="header-links">Home</a>
+        <a href="" id="header-links">Preguntas</a>
+        <a href="" id="header-links">Presupuestos</a>
+        <a href="" id="header-links">Contacto</a>
+        <i class="fa-solid fa-bars" id="btn-menu"></i>
+        <i class="fa-solid fa-x" id="btn-close"></i>
+      </div>
+
       <!-- HERO  -->
       <div class="hero-container">
         <img
@@ -51,7 +62,7 @@
       </div>
 
       <h3 id="servicios" data-aos="fade-down">Productos</h3>
-      <!-- 
+      <!--
       PRODUCTOS -->
       <section class="benefits-container">
         <div data-aos="fade-right" class="web-container">
@@ -123,12 +134,7 @@
           <textarea id="message" cols="1" rows="1"></textarea>
         </div>
         <div class="button-input">
-          <button
-            onclick="sendMail()"
-            type="submit"
-            id="btn-submit-id"
-            class="btn-submit"
-          >
+          <button type="submit" id="btn-submit-id" class="btn-submit">
             Enviar
           </button>
         </div>
@@ -151,7 +157,7 @@
         ></a>
       </section>
     </div>
-
+    <script src="./script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./anijs-master/dist/anijs-min.js"></script>
     <script>
@@ -168,6 +174,5 @@
         emailjs.init("65U3gUdFV_lp5kx5e");
       })();
     </script>
-    <script src="./script.js"></script>
   </body>
 </html>

@@ -42,8 +42,11 @@ body{
   font-size: 20px;
   
 }
+ .header-container i{
+  display: none;
+ }
 
-
+ .header-container-responsive{display: none}
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! HERO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .hero-container{
   width: 100%;
@@ -314,6 +317,8 @@ body{
   color: white;
 }
 
+
+
 /*???????????????????????????????????????????????????????????DISPOSITIVOS MOVILES HASTA 480PX??????????????????????????????????*/
 
 @media only screen and (max-width: 600px){
@@ -324,22 +329,48 @@ body{
 }
 
   /*!!!!!!!!!!!!!!!!!!!!!!!!!! HEADER */
-  .header-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
-  }
+  
 
-  .header-container img{
-    display: grid;
-    grid-column: 2;
-    margin: 0 auto;
- 
-  }
+  .header-container{display: none;}
 
-  .header-container p{
-    display: none;
-  }
+.header-container-responsive{
+   display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+
+}
+
+.header-container-responsive img{
+  height: 100px;
+  display: grid;
+  grid-column:2 ;
+  margin: 0 auto;
+}
+.header-container-responsive a{
+
+display: none;
+}
+
+.header-container-visible{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  justify-content: right;
+}
+
+.a-visible{
+  display: grid;
+  grid-column: 2;
+}
+
+#btn-menu{
+  align-self: center;
+  display: block;
+}
+
+#btn-close{
+  display: none;
+}
+
   /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! HERO */
 .hero-container{
 
