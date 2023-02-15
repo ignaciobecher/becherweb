@@ -24,8 +24,8 @@ btnMenu.addEventListener("click", function () {
   linkContainer.style.justifyItems = "end";
   headerLink1.style.display = "grid";
   headerLink1.style.gridColumn = "2";
-  // headerLink2.style.display = "grid";
-  // headerLink2.style.gridColumn = "2";
+  headerLink2.style.display = "grid";
+  headerLink2.style.gridColumn = "2";
   headerLink3.style.display = "grid";
   headerLink3.style.gridColumn = "2";
   headerLink4.style.display = "grid";
