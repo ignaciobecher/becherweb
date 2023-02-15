@@ -1,7 +1,6 @@
 const btnSend = document.getElementById("btn-submit-id");
 
 btnSend.addEventListener("click", function sendMail(e) {
-  e.preventDefault();
   var params = {
     from_name: document.getElementById("fullName").value,
     email_id: document.getElementById("email_id").value,
@@ -20,4 +19,11 @@ btnSend.addEventListener("click", function sendMail(e) {
     }
   );
   e.preventDefault();
+  let inputsCleaner = function () {
+    document.getElementById("fullName").value = "";
+    document.getElementById("email_id").value = "";
+    document.getElementById("message").value = "";
+    return true;
+  };
+  inputsCleaner();
 });

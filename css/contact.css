@@ -71,6 +71,7 @@ body {
   }
 
   .container .information-container {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     padding-left: 15px;
