@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <script
+      src="https://kit.fontawesome.com/6ac7388e8a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/contact.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Contactate!</h1>
+
+      <div class="form-container">
+       
+        <div class="name-input">
+            
+          <label for="">Nombre:</label>
+          <input type="text" name="" id="fullName" required />
+        </div>
+        <div class="email-input">
+          <label for="">Email:</label>
+          <input type="text" name="" id="email_id" required />
+        </div>
+        <div class="consult-input">
+          <label for="">Consulta:</label>
+          <textarea id="message" cols="1" rows="1"></textarea>
+        </div>
+        <div class="button-input">
+          <button type="submit" id="btn-submit-id" class="btn-submit">
+            Enviar
+          </button>
+        </div>
+      </div>
+
+      <div class="information-container">
+        <h2>Envia tu mensaje!</h2>
+        <p> <i class="fa-regular fa-envelope"></i></i> becherdesarrollo@gmail.com</p>
+        <p><i class="fa-brands fa-instagram"></i> becherdesarrollo</p>
+      </div>
+
+     
+    </div>
+    <script src="./scriptContact.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("65U3gUdFV_lp5kx5e");
+      })();
+    </script>
+  </body>
+</html>
