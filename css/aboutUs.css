@@ -48,3 +48,12 @@ body {
   background-size: cover;
   height: 200px;
 }
+
+.team-container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.team-container h2 {
+  text-align: center;
+}
